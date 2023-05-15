@@ -33,10 +33,10 @@ class Perceptron():
     def predict(self, X):
         return np.where(self.net_input(X)>=0.0,1,-1)
 
-# Create a flask
+# Tworzenie flaska
 app = Flask(__name__)
 
-# Create an API end point
+# Tworzenie api
 @app.route('/api/v1.0/predict', methods=['GET'])
 def get_prediction():
 
